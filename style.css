@@ -309,7 +309,7 @@ span {
 .education-row .education-column {
   flex: 1 1 40rem;
 }
-.education-colmn .title {
+.education-column .title {
   font-size: 2.5rem;
   margin: 0 0 1.5rem 2rem;
 }
@@ -338,6 +338,21 @@ span {
   border: 0.2rem solid var(--main-color);
   border-radius: 0.6rem;
   margin-bottom: 2rem;
+  overflow: hidden;
+}
+.education-content .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second-bg-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+.education-content .content:hover::before {
+  width: 100%;
 }
 
 .education-content .content .year {
@@ -357,3 +372,5 @@ span {
   font-size: 1.6rem;
   padding-top: 0.5rem;
 }
+
+/* Skills Design */
