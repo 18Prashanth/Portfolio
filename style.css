@@ -326,8 +326,11 @@ span {
   content: "";
   position: absolute;
   top: 0;
+  left: -1.1rem;
   width: 2rem;
   height: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
 }
 .education-content .content {
   position: relative;
