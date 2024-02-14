@@ -113,7 +113,7 @@ section {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 34.5rem;
+  width: 50.5rem;
   height: 5rem;
 }
 
@@ -148,6 +148,17 @@ section {
 }
 
 .btn-box .btn:nth-child(2)::before {
+  background: var(--main-color);
+}
+
+.btn-box .btn:nth-child(3) {
+  background: transparent;
+  color: var(--main-color);
+}
+.btn-box .btn:nth-child(3):hover {
+  color: var(--bg-color);
+}
+.btn-box .btn:nth-child(3)::before {
   background: var(--main-color);
 }
 
